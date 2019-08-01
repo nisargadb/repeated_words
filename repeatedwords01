@@ -1,0 +1,30 @@
+#Taking input 
+string ="how are you doing the job the"
+
+#initilializing varible to 0 to keep the track of number of repetitions
+count=0
+
+#Initiliazing empty list , Since you cant use list direclty in the right hand side without initializing 
+
+repeated_words=[]
+
+#Converted Strings to lists
+string = string.split()
+
+# iterating over a list called string
+for i in string:
+# iterarating inside for loop again
+    for j in string:
+    #checking if current element of outer loop is equal to current element of inner loop , obviously for the first iterartion i = j  , for all elemets count will be mandatoriy 1 , coount will become 2 if there is another occurence
+    
+        if(i==j):
+            count = count +1
+#after each time inner loop executes we will check whether count is >2            
+    if(count>=2):
+#appending the word in to the repeated list if the count is greater than 2
+            repeated_words.append(i)
+            break
+        
+    
+            
+print(repeated_words)
