@@ -25,6 +25,4 @@ for i in string:
             repeated_words.append(i)
             break
         
-    
-            
 print(repeated_words)
